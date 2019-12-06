@@ -5,7 +5,7 @@ services:
 #build test version of the client version
 #prod dockerfile does not allow as to make any tests
 before install:
-  - docker build -f Dockerfile -t inestouzi/Nuitdinfo2019 .
+  - docker build -t inestouzi/Nuitdinfo2019 .
 #primary script running section 
 script:
 # --coverage because the npm test does not exit by herself
