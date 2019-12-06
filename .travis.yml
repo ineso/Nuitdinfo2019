@@ -2,19 +2,13 @@ sudo: required
 services:
   - docker
 
-#build test version of the client version
 #prod dockerfile does not allow as to make any tests
 before install:
-  - docker build -t inestouzi/nuitdinfo2019 .
-#primary script running section 
-script:
-# --coverage because the npm test does not exit by herself
- # - docker run  inestouzi/nuitdinfo2019 npm test -- --coverage
+  - docker build -t ineso/nuitdinfo2019 .
+
 
 after_success: 
   - docker build -t inestouzi/nuitdinfo2019  .
-
-
 #login to docker CLI in one single login 
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   - docker push inestouzi/nuitdinfo2019
