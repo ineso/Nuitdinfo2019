@@ -3,6 +3,9 @@
 # DOCKERISATION:
 Ce présent travail est réalisé dans le cadre du défi: Dockerisation par les membres de Alpha Team.
 
+
+Tous d'abord, on a pris un code source de notre équipe qui ont developpé une application avec nodejs et angular en utilisant le ProjectClarity 
+
 Les étapes de création d'un dockerfile :
 
 # stage 1
