@@ -51,6 +51,12 @@ Il faut taper cette commande "docker push inestouzi/nuitdinfo2019" sur le docker
 ## Etape 6:
 Il faut ajouter le code correspond pour mettre le travail sur le serveur heroku
 
+deploy:
+  provider: heroku
+  api_key: $API_KEY     ** ajout du api_key qui se trouve comme etant une variable d'environement dans heroku
+  edge: true 
+
+
 
 
 Et voilà le projet devient exécutable et prêt à être utilisé.# Dockerisation
