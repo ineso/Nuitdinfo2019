@@ -1,6 +1,6 @@
 # Nuitdinfo2019
 
-# SaharaDashboard
+# DOCKERISATION:
 Ce présent travail est réalisé dans le cadre du défi: Dockerisation par les membres de Alpha Team.
 
 Les étapes de création d'un dockerfile :
