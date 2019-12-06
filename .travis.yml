@@ -4,7 +4,7 @@ services:
 
 #prod dockerfile does not allow as to make any tests
 before install:
-  - docker build -t ineso/nuitdinfo2019 .
+  - docker build -t inestouzi/nuitdinfo2019 .
 
 
 after_success: 
